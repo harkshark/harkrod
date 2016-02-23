@@ -27,7 +27,6 @@ $(function(){
         offset: topOffset
     });
 
-
     // use 'inbody' class to add background when not at the very top
     toggleInBody(this);
 
@@ -36,7 +35,6 @@ $(function(){
     function toggleInBody(body){
 
         var hash = $(body).find('li.active a').attr('href');
-        
         if (hash !== '#featured'){ $('header nav').addClass('inbody'); }
         else { $('header nav').removeClass('inbody'); }
     }
@@ -67,23 +65,17 @@ $(function(){
         pause:    false
     });
 
-
     // count slide items and add thumbnails
     for (var i=0; i<numSlides; i++){
 
         var markup = '<li data-target="#featured" data-slide-to="' + i + '"';
-
-        if (i === randomSlide){ markup += ' class="active" '; }     // set active thumbnail
-
+        if (i === randomSlide){ markup += ' class="active" '; }
         markup += '></li>';
-
         $('#featured ol').append(markup);
     }
 
-
     // randomize first slide
     //$('#featured .item').eq(randomSlide).addClass('active');
-
 
     // convert images to background-images for full window display
     $('.fullheight').css('height', winHeight);
@@ -96,18 +88,8 @@ $(function(){
     });
 
     $(window).resize(function(){
-
         winHeight = $(window).height();
         $('.fullheight').css('height', winHeight);
     });
-
-    $('#featured').on('slid.bs.carousel', function(event) {
-        if ($('.carousel-inner .active').hasClass('black-white')){
-            //$('.navbar-brand *').css('color','white');
-        } else {
-            //$('.navbar-brand *').css('color','black');
-        }
-    });
-
 
 });

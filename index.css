@@ -44,17 +44,17 @@ header .navbar-default .navbar-toggle .icon-bar { background-color:white; }
 
 /*header .navbar-brand { background: url(images/wisdompetlogo.svg); background-repeat:no-repeat; background-position:15px 0; height:auto; }*/
 
-header .navbar-brand h1 { color:white; font-family:Parisienne; font-size:2em; font-weight:400; margin:0; padding-left:50px; }
+header .navbar-brand h1 { color:white; font-family:Parisienne; font-size:2em; font-weight:400; margin:0; padding-left:50px; text-shadow:2px 2px #000; }
 
 header .navbar-brand h1 small { color:white; display:block; margin-top:5px; padding-left:105px; }
 
 header .navbar-default { background-color:transparent; border:none; }
 
-header .navbar-default .navbar-nav a { color:white; padding:5px 8px; }
-header .navbar-default .navbar-nav a:hover { color:white; }
+header .navbar-default .navbar-nav a { color:white; padding:5px 8px; text-shadow:1px 1px #000; }
+header .navbar-default .navbar-nav a:hover { color:white; text-shadow:1px 1px #000; }
 
-header .navbar-default .navbar-nav .active a { background:transparent; border-bottom:3px solid white; color:white; font-weight:700; text-shadow:none; }
-header .navbar-default .navbar-nav .active a:hover { background:transparent; text-shadow:none; }
+header .navbar-default .navbar-nav .active a { background:transparent !important; border-bottom:3px solid white; color:white; font-weight:700; text-shadow:1px 1px #000; }
+header .navbar-default .navbar-nav .active a:hover { background:transparent !important; text-shadow:1px 1px #000; }
 
 header .inbody { background:rgba(255,255,255, .9); }
 
@@ -63,14 +63,14 @@ header .navbar.inbody { padding-bottom:0; padding-top:0; }
 header .navbar.inbody .navbar-nav { padding-top:10px; }
 
 header .navbar.inbody .navbar-nav a, 
-header .navbar.inbody .navbar-nav a:hover { color:black; }
+header .navbar.inbody .navbar-nav a:hover { color:black; text-shadow:none; }
 
 header .navbar.inbody .navbar-nav .active a, 
-header .navbar.inbody .navbar-nav .active a:hover { border-color:black; }
+header .navbar.inbody .navbar-nav .active a:hover { border-color:black; text-shadow:none; }
 
 header .inbody .navbar-brand { background-size:43px; background-position:top left; margin-left:10px; margin-top:5px; padding-bottom:0; }
 
-header .inbody .navbar-brand h1 { color:black; font-size:1.1em; }
+header .inbody .navbar-brand h1 { color:black; font-size:1.1em; text-shadow:none; }
 
 header .inbody .navbar-brand h1 small { display:none; }
 
