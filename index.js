@@ -14,9 +14,9 @@ $(function(){
 
     "use strict";
 
-    var topOffset = 50,     // navbar height
-        numSlides = $('#featured .item').length,
-        randomSlide = Math.floor(Math.random()*numSlides),
+    var topOffset = 50,
+        numSlides = $('#us .item').length,
+        randomSlide = Math.floor(Math.random() * numSlides),
         winHeight = $(window).height();
 
 
@@ -35,7 +35,7 @@ $(function(){
     function toggleInBody(body){
 
         var hash = $(body).find('li.active a').attr('href');
-        if (hash !== '#featured'){ $('header nav').addClass('inbody'); }
+        if (hash !== '#us'){ $('header nav').addClass('inbody'); }
         else { $('header nav').removeClass('inbody'); }
     }
 
@@ -61,26 +61,26 @@ $(function(){
     /* Carousel ------------------------- */
 
     $('.carousel').carousel({
-        interval: '5000',
+        interval: '10000',
         pause:    false
     });
 
     // count slide items and add thumbnails
     for (var i=0; i<numSlides; i++){
 
-        var markup = '<li data-target="#featured" data-slide-to="' + i + '"';
+        var markup = '<li data-target="#us" data-slide-to="' + i + '"';
         if (i === randomSlide){ markup += ' class="active" '; }
         markup += '></li>';
-        $('#featured ol').append(markup);
+        $('#us ol').append(markup);
     }
 
     // randomize first slide
-    //$('#featured .item').eq(randomSlide).addClass('active');
+    //$('#us .item').eq(randomSlide).addClass('active');
 
-    // convert images to background-images for full window display
-    $('.fullheight').css('height', winHeight);
-
-    $('#featured .item img').each(function(){
+    // convert img to background-img for full window display
+    //$('.fullheight').css('height', winHeight);
+    /*
+    $('#us .item img').each(function(){
 
         var imgSrc = $(this).attr('src');
         $(this).parent().css({ 'background-image': 'url('+ imgSrc +')' });
@@ -91,5 +91,5 @@ $(function(){
         winHeight = $(window).height();
         $('.fullheight').css('height', winHeight);
     });
-
+    */
 });

@@ -42,7 +42,7 @@ header .navbar-default .navbar-toggle .icon-bar { background-color:white; }
 	header .navbar-collapse.in { background-color:rgba(0,0,0, .5); }
 }
 
-/*header .navbar-brand { background: url(images/wisdompetlogo.svg); background-repeat:no-repeat; background-position:15px 0; height:auto; }*/
+/*header .navbar-brand { background: url(img/wisdompetlogo.svg); background-repeat:no-repeat; background-position:15px 0; height:auto; }*/
 
 header .navbar-brand h1 { color:white; font-family:Parisienne; font-size:2em; font-weight:400; margin:0; padding-left:50px; text-shadow:2px 2px #000; }
 
@@ -90,7 +90,7 @@ header .inbody .navbar-brand h1 small { display:none; }
 .carousel-control.right,
 .carousel-control.left { background-image:none; }
 
-#featured .item { background-position:center center; background-repeat:no-repeat; background-size:cover; height:100%; width:100%; }
+#us .item { background-position:center center; background-repeat:no-repeat; background-size:cover; height:100%; width:100%; }
 
 
 /* Views -------------------------------- */
